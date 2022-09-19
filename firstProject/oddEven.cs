@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace firstProject
 {
@@ -12,7 +8,7 @@ namespace firstProject
         {
             int num;
             Console.WriteLine("Enter any Number: ");
-            num = Console.Read();
+            num = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Number is "+num);
             if (num%2 == 0)
@@ -23,6 +19,7 @@ namespace firstProject
             {
                 Console.WriteLine(num+" is Odd");
             }
+            Console.ReadKey();
         }
     }
 }
